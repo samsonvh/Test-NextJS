@@ -1,9 +1,9 @@
 import React from "react";
 
 const page = async () => {
-  const a = await fetch("http://112.213.91.196:7000/api/v1/membership-packages").then(res => res.json());
+  const a = await fetch("https://api.publicapis.org/entries").then(res => res.json());
 
-  return <div>{a.pageCount}</div>;
+  return <div>{a.count}</div>;
 };
 
 export default page;
